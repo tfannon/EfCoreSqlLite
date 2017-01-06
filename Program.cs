@@ -12,8 +12,8 @@ namespace ConsoleApplication
            using (var context = new SqliteDbContext()) {
 
                 // Start with a clean database
-                context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
+                //context.Database.EnsureDeleted();
+                //context.Database.EnsureCreated();
 
                 // Add reminders.
                 context.Reminders.Add(new Reminder {
